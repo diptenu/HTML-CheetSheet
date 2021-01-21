@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Monoton&family=Tangerine:wght@700&display=swap');
+
+/*
+    font-family: 'Gloria Hallelujah', cursive;
+
+    font-family: 'Kaushan Script', cursive;
+
+    font-family: 'Monoton', cursive;
+
+    font-family: 'Tangerine', cursive;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-top {
+    height: 60px;
+    margin-right: 30px;
+}
+
+.top-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Monoton', cursive;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: rgba(204, 204, 204, 0.493);
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+ol {
+    list-style: none;
+}
+.list-p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.border-radius {
+    border-radius: 12px;
+}
+
+/* ************************************ */
+
+.toolbar-item button {
+    color: white !important;
+    padding: 10px !important;
+    margin: 20px 30px 0 0 !important;
+    font-size: 20px !important;
+}
