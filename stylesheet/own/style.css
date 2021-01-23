@@ -100,7 +100,7 @@ li {
 }
 
 .valid::before {
-    content: "HTML:5";
+    content: "Valid in HTML 5";
 }
 
 .invalid {
@@ -242,6 +242,28 @@ a[href="https://diptenu.me"] {
     letter-spacing: 2px;
     font-size: 25px;
 }
+
+.preview {
+    text-align: center;
+    background-color: rgb(156, 156, 156);
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 8px;
+    /* border: 1px solid red; */
+}
+
+.preview-img {
+    height: 50px;
+}
+
+
+.preview-img:not(:first-child) {
+    filter: invert(100);
+    /* background: blue; */
+}
+
 /* ************************************ */
 
 .toolbar-item button {
