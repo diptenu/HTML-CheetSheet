@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Monoton&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&display=swap');
+
 
 /*
     font-family: 'Gloria Hallelujah', cursive;
-
     font-family: 'Kaushan Script', cursive;
-
     font-family: 'Monoton', cursive;
-
     font-family: 'Tangerine', cursive;
+
+
+    font-family: 'Dancing Script', cursive;
+
 */
 
 :root {
@@ -44,7 +46,7 @@
 .top-text {
     font-size: 30px;
     text-transform: capitalize;
-    font-family: 'Monoton', cursive;
+    /* font-family: 'Monoton', cursive; */
     font-family: 'Kaushan Script', cursive;
     /* font-family: 'Gloria Hallelujah', cursive; */
     /* font-family: 'Tangerine', cursive; */
@@ -188,21 +190,28 @@ li {
 
 footer {
     /* height: 100px; */
-    background-color: rgb(2, 55, 155);
+    /* background-color: rgb(2, 55, 155); */
+    /* background-color: liner-grident(); */
+    background-image: linear-gradient(to right bottom, #4B0082, #13274F);
     margin-top: 20px;
     text-align: center;
     /* padding-bottom: 25px; */
     padding: 10px 20px;
     display: flex;
+    justify-content: center;
+    border-top-left-radius: 100px;
 }
 
+/*
 .f-c {
     width: 50%;
+    text-align: center;
 }
 
 .w-edit {
     width: 50%;
-}
+} 
+*/
 .btn:link,
 .btn:visited {
     text-decoration: none;
@@ -215,10 +224,23 @@ footer {
     font-size: 20px;
     color: #fff;
     /* margin: 18px 0; */
+    background-image: linear-gradient(to right bottom, #9603ff, #010b20);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.footer-p:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .c-red {
     color: red;
+}
+
+a[href="https://diptenu.me"] {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    font-size: 25px;
 }
 /* ************************************ */
 
