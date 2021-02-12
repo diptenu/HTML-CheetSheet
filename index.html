@@ -7,6 +7,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="stylesheet/external/prism.css">
     <link rel="stylesheet" href="stylesheet/own/style.css">
+    <link rel="stylesheet" href="stylesheet/own/example.css">
     <!-- JavaScript -->
     <script src="app/prism.js"></script>
     <!-- Favicon -->
@@ -74,16 +75,12 @@
                         <img src="img/svg/logo.svg" alt="Preview img" class="preview-img">
                         <img src="img/svg/logo.svg" alt="Preview img" class="preview-img">
                     </div>
-                    <pre class="language-html border-radius"><code>
+                    <pre class="language-css border-radius"><code>
 filter: invert(100);
                     </code></pre>
                     <!-- <p class="more-info-text"><a href="#">See More</a> </p> -->
                     <p class="more-info-text">**** Use between 0 to 100</p>
                 </li>
-
-
-
-
                 <!-- ************ -->
                 <li class="list-heading">
                     <p class="more-info-text invalid"></p>
@@ -93,9 +90,70 @@ filter: invert(100);
                     </code></pre>
                     <p class="more-info-text">****HTML has many types of marquee <a href="more-ex/marquee.html">See More</a> </p>
                 </li>
+                <!-- ==================== -->
+                <!-- 5th -->
+                <!-- ************ -->
+                <li class="list-heading">
+                    <p class="more-info-text valid"></p>
+                    <p class="list-p">
+                        <a href="#" class="example-btn-class example-btn-class-white ex-padding">Hover Me</a>
+                    </p>
+                    <pre class="language-css border-radius"><code>
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0px 10px 20px rgba(0, 0, 0, .3)
+}
+
+.btn:active:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        0px 5px 10px rgba(0, 0, 0, .3)
+}
+
+.btn-white {
+    color: #000000;
+    background-color: #fff;
+}
+
+.btn-white::after {
+    background-color: rgb(211, 211, 211);
+}
+
+.btn::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    transition: all .5s;
+    border-radius: 100px;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.5) scaleY(1.4);
+    opacity: 0;
+}
+                    </code></pre>
+                </li>
             </ol>
         </div>
     </main>
+    <!--=============================================================================================================-->
     <div class="div-mobile">
         <p class="div-mobile-p">
             <span class="wel-dev">Welcome Developer,</span> It looks like you use your mobile device to access this website. unfortunately, I'm still working on it. I hope I will complete it soon. <span class="mobile-thank">Thank you for understanding</span>

@@ -199,7 +199,8 @@ footer {
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    /* border-bottom-left-radius: 100px; */
 }
 
 /*
@@ -262,6 +263,10 @@ a[href="https://diptenu.me"] {
 .preview-img:not(:first-child) {
     filter: invert(100);
     /* background: blue; */
+}
+
+.ex-padding {
+    padding: 20px 0px;
 }
 
 /* ************************************ */
