@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <!-- seo -->
     <meta name="keywords" content="HTML html CSS css online Cheat cheet">
 </head>
+
 <body>
     <header class="header">
         <!-- <img src="https://diptenu.me/img/profile.png" alt="Logo" class="logo-top"> -->
@@ -23,8 +25,10 @@
     </header>
     <main>
         <div class="web-edit">
-            <a href="https://github.com/diptenu/HTML-CheetSheet"><img src="img/svg/github.svg" alt="Edit Website" class="web-edit-logo"></a>
-            <a href="https://www.patreon.com/Diptenusarkar"><img src="img/normal/Digital-Patreon-Logo_FieryCoral.png" alt="Edit Website" class="spon-logo"></a>
+            <a href="https://github.com/diptenu/HTML-CheetSheet"><img src="img/svg/github.svg" alt="Edit Website"
+                    class="web-edit-logo"></a>
+            <a href="https://www.patreon.com/Diptenusarkar"><img src="img/normal/Digital-Patreon-Logo_FieryCoral.png"
+                    alt="Edit Website" class="spon-logo"></a>
         </div>
         <div class="container">
             <ol>
@@ -88,11 +92,14 @@ filter: invert(100);
                 <!-- ************ -->
                 <li class="list-heading">
                     <p class="more-info-text invalid"></p>
-                    <p class="list-p"><marquee>Im moving text</marquee> </p>
+                    <p class="list-p">
+                        <marquee>Im moving text</marquee>
+                    </p>
                     <pre class="language-html border-radius"><code>
 &ltmarquee&gtIm moving text&lt/marquee&gt
                     </code></pre>
-                    <p class="more-info-text">****HTML has many types of marquee <a href="more-ex/marquee.html">See More</a> </p>
+                    <p class="more-info-text">****HTML has many types of marquee <a href="more-ex/marquee.html">See
+                            More</a> </p>
                 </li>
                 <!-- ==================== -->
                 <!-- 5th -->
@@ -152,24 +159,151 @@ filter: invert(100);
 }
                     </code></pre>
                 </li>
+
+                <!-- 6th -->
+                <!-- ==================== -->
+
+                <li class="list-heading">
+                    <p class="more-info-text valid"></p>
+                    <p class="list-p">
+                        Text Video Background
+                    </p>
+
+                    <p class="list-p">
+                        <nav class="nav">
+                            <div class="nav__logo">
+                                <video autoplay muted loop>
+                                    <source src="assets/video/video.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="text-box">
+                                    <a href="index.html"> Diptenu</a>
+                                </div>
+                            </div>
+
+                            <ol>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ol>
+                        </nav>
+                    </p>
+
+                    <pre class="language-html border-radius"><code>
+&ltnav class="nav"&gt
+    &ltdiv class="nav__logo"&gt
+        &ltvideo autoplay muted loop&gt
+            &ltsource src="assets/video/video.mp4" type="video/mp4"&gt
+        &lt/video&gt
+
+        &ltdiv class="text-box"&gt
+            &lta href="index.html"&gt Diptenu&lt/a&gt
+        &lt/div&gt
+    &lt/div&gt
+
+    &ltol&gt
+        &ltli&gt&lta href="index.html"&gtHome&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="about.html"&gtAbout&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="contact.html"&gtContact&lt/a&gt&lt/li&gt
+    &lt/ol&gt
+&lt/nav&gt
+                    </code></pre>
+                    <pre class="language-css border-radius"><code>
+.nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    height: 10vh;
+    /* background: red; */
+}
+
+.nav .nav__logo {
+    /* background: yellow; */
+    height: 100%;
+    width: 200px;
+    position: relative;
+}
+
+.nav .nav__logo video {
+    width: 100%;
+    height: 100%;
+}
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.4rem;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+
+.text-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ol {
+    list-style: none;
+}
+
+.nav ol li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav ol li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1.3rem 2rem;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+
+.nav ol li a:hover {
+    background: red;
+}
+                    </code></pre>
+                    <!-- <p class="more-info-text"><a href="#">See More</a> </p> -->
+                </li>
             </ol>
         </div>
     </main>
     <!--=============================================================================================================-->
     <div class="div-mobile">
         <p class="div-mobile-p">
-            <span class="wel-dev">Welcome Developer,</span> It looks like you use your mobile device to access this website. unfortunately, I'm still working on it. I hope I will complete it soon. <span class="mobile-thank">Thank you for understanding</span>
+            <span class="wel-dev">Welcome Developer,</span> It looks like you use your mobile device to access this
+            website. unfortunately, I'm still working on it. I hope I will complete it soon. <span
+                class="mobile-thank">Thank you for understanding</span>
         </p>
     </div>
     <div class="div-tablet">
         <p class="div-tablet-p">
-            <span class="wel-dev-tab">Welcome Developer,</span> It looks like you use your Tab device to access this website. unfortunately, I'm still working on it. I hope I will complete it soon. <span class="mobile-thank">Thank you for understanding</span>
+            <span class="wel-dev-tab">Welcome Developer,</span> It looks like you use your Tab device to access this
+            website. unfortunately, I'm still working on it. I hope I will complete it soon. <span
+                class="mobile-thank">Thank you for understanding</span>
         </p>
     </div>
     <footer>
         <div class="f-c">
             <p class="footer-p">Website made with <span class="c-red">❤</span></p>
-            <p class="footer-p">Initiative By <a href="https://diptenu.me" class="btn">diptenu</a></p>
+            <p class="footer-p">Initiative By <a href="http://d.dsky.in" class="btn" target="_blank">diptenu</a></p>
             <!-- <p class="footer-p"><a href="https://github.com/diptenu/HTML-CheetSheet" class="btn">Edit Website On Github</a></p> -->
         </div>
         <!-- <div class="w-edit">
@@ -192,4 +326,5 @@ filter: invert(100);
      -->
     <!-- ******************** -->
 </body>
+
 </html>
