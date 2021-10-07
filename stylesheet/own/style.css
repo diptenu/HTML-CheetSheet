@@ -12,9 +12,12 @@
 
 */
 
+/* Normal reset  */
+/* ====================== */
+
 :root {
     --bg-valid: green;
-    --color-valid:white;
+    --color-valid: white;
     --bg-invalid: #ff004c;
     --color-invalid: #f8f0fc;
 }
@@ -24,6 +27,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ================================ */
+
 
 .header {
     height: 70px;
@@ -137,25 +143,43 @@ li {
 }
 
 @media screen and (max-width:600px) {
-    main, .div-tablet {
+    .list-p {
+        font-size: 16px;
+    }
+
+    .valid::before {
+        content: "Valid in HTML 5";
+        font-size: 16px;
+    }
+
+    .invalid::before {
+        content: "Valid in HTML 5";
+        font-size: 16px;
+    }
+
+    .mob-hide {
+        display: hide !important;
+    }
+
+    .web-edit {
         display: none;
     }
 }
 
-@media screen and (min-width:601px) and (max-width:850px){
-    main {
+@media screen and (min-width:601px) and (max-width:850px) {
+    /* main {
         display: none;
-    }
+    } */
 
-    .div-mobile {
+    /* .div-mobile {
         display: none;
-    }
+    } */
 }
 
 @media screen and (min-width:851px) {
-    .div-mobile, .div-tablet {
+    /* .div-mobile, .div-tablet {
         display: none;
-    }
+    } */
 }
 
 .div-mobile-p {
@@ -281,6 +305,7 @@ a[href="https://diptenu.me"] {
 }
 
 
+
 .web-edit-logo {
     filter: invert(100);
     height: 40px;
@@ -292,6 +317,7 @@ a[href="https://diptenu.me"] {
     height: 40px;
     cursor: pointer;
 }
+
 /* ************************************ */
 
 .toolbar-item button {
@@ -301,3 +327,16 @@ a[href="https://diptenu.me"] {
     font-size: 20px !important;
     cursor: pointer !important;
 }
+
+
+
+/* copyright */
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+
+/* ========================== */
