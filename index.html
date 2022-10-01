@@ -282,6 +282,42 @@ filter: invert(100);
                     </code></pre>
                     <!-- <p class="more-info-text"><a href="#">See More</a> </p> -->
                 </li>
+
+                <!-- 7th -->
+                <!-- ==================== -->
+
+                <li class="list-heading">
+                    <p class="more-info-text valid"></p>
+                    <p class="list-p">
+                        How we can add a global file <br> We need jquery & JavaScript for that 
+                    </p>
+                    <pre class="language-javascript border-radius"><code>
+$(function() {
+  $("*[include-html]").each(function() {
+    var t = $(this).attr("include-html"),
+      u = this.id;
+    jQuery.ajax({
+      url: t,
+      success: function(t) {
+        $("#" + u).html(t)
+      },
+      error: function(n, c, i) {
+        var s = n.status + ": " + n.statusText;
+        $("#" + u).html(t + "-" + s)
+      }
+    })
+  })
+});
+                    </code></pre>
+                    <p class="list-p">
+                        Final code 
+                    </p>
+                    
+                    <pre class="language-html border-radius"><code>
+&lt;div include-html="include/header.html" id="header_file"&gt;&lt;/div&gt;
+                    </code></pre>
+                    <!-- <p class="more-info-text"><a href="#">See More</a> </p> -->
+                </li>
             </ol>
         </div>
     </main>
