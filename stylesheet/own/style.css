@@ -223,7 +223,8 @@ footer {
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    border-top-right-radius: 100px;
+    text-align: center;
+    border-top-left-radius: 50px;
     /* border-bottom-left-radius: 100px; */
 }
 
@@ -262,7 +263,7 @@ footer {
     color: red;
 }
 
-a[href="https://diptenu.me"] {
+a[href="https://github.com/Diptenusarkar"] {
     font-family: 'Dancing Script', cursive;
     letter-spacing: 2px;
     font-size: 25px;
