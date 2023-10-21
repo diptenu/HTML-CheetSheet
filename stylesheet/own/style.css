@@ -28,11 +28,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /* ================================ */
 
 
 .header {
-    height: 70px;
+    height: 7rem;
     background-color: rgb(6, 219, 129);
     display: flex;
     color: #fff;
@@ -41,8 +45,8 @@
 }
 
 .logo-top {
-    height: 60px;
-    margin-right: 30px;
+    height: 6rem;
+    margin-right: 3rem;
 }
 
 .logo {
@@ -50,7 +54,7 @@
 }
 
 .top-text {
-    font-size: 30px;
+    font-size: 3rem;
     text-transform: capitalize;
     /* font-family: 'Monoton', cursive; */
     font-family: 'Kaushan Script', cursive;
@@ -62,9 +66,9 @@
     width: 80vw;
     margin: 0 auto;
     background-color: rgba(204, 204, 204, 0.493);
-    padding: 20px 30px;
-    margin-top: 20px;
-    border-radius: 8px;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    border-radius: .8rem;
 }
 
 ol {
@@ -72,7 +76,7 @@ ol {
 }
 
 li:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
 }
 
 li {
@@ -82,16 +86,16 @@ li {
 }
 
 .list-p {
-    font-size: 25px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .border-radius {
-    border-radius: 12px;
+    border-radius: 1.2rem;
 }
 
 .more-info-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: left;
     display: inline-block;
 }
@@ -102,7 +106,7 @@ li {
     color: var(--color-valid);
     padding: 2px 5px;
     border-radius: 3px;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .valid::before {
@@ -115,7 +119,7 @@ li {
     color: var(--color-invalid);
     padding: 2px 5px;
     border-radius: 3px;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .invalid::before {
@@ -133,32 +137,32 @@ li {
 
 @media screen and (max-width:500px) {
     .top-text {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .logo-top {
-        height: 40px;
-        margin-right: 15px;
+        height: 4rem;
+        margin-right: 1.5rem;
     }
 
     .container {
-        padding: 20px 10px;
+        padding: 2rem 1rem;
     }
 }
 
 @media screen and (max-width:600px) {
     .list-p {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .valid::before {
         content: "Valid in HTML 5";
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .invalid::before {
         content: "Valid in HTML 5";
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .mob-hide {
@@ -188,13 +192,13 @@ li {
 
 .div-mobile-p {
     text-align: justify;
-    margin: 10px 20px;
+    margin: 1rem 2rem;
     /* background-color: rgb(223, 223, 223); */
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .wel-dev {
-    font-size: 25px;
+    font-size: 2.5rem;
     display: block;
 }
 
@@ -207,13 +211,13 @@ li {
 }
 
 .wel-dev-tab {
-    font-size: 34px;
+    font-size: 3.4rem;
 }
 
 .div-tablet-p {
     text-align: justify;
-    font-size: 25px;
-    margin: 20px;
+    font-size: 2.5rem;
+    margin: 2rem;
 }
 
 footer {
@@ -221,10 +225,10 @@ footer {
     /* background-color: rgb(2, 55, 155); */
     /* background-color: liner-grident(); */
     background-image: linear-gradient(to right bottom, #4B0082, #13274F);
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: center;
     /* padding-bottom: 25px; */
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -251,16 +255,16 @@ footer {
 }
 
 .footer-p {
-    font-size: 20px;
+    font-size: 2rem;
     color: #fff;
     /* margin: 18px 0; */
     background-image: linear-gradient(to right bottom, #9603ff, #010b20);
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 1rem 15px;
+    border-radius: .8rem;
 }
 
 .footer-p:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 .c-red {
@@ -270,7 +274,7 @@ footer {
 a[href="https://github.com/Diptenusarkar"] {
     font-family: 'Dancing Script', cursive;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .preview {
@@ -279,13 +283,13 @@ a[href="https://github.com/Diptenusarkar"] {
     width: 30%;
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 1rem 0;
     border-radius: 8px;
     /* border: 1px solid red; */
 }
 
 .preview-img {
-    height: 50px;
+    height: 5rem;
 }
 
 
@@ -295,31 +299,31 @@ a[href="https://github.com/Diptenusarkar"] {
 }
 
 .ex-padding {
-    padding: 20px 0px;
+    padding: 2rem 0px;
 }
 
 .web-edit {
     position: fixed;
-    bottom: 40px;
-    right: 20px;
+    bottom: 4rem;
+    right: 2rem;
     z-index: 99999999999999999999999;
     background: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.616);
+    box-shadow: 5px 3px 1rem rgba(0, 0, 0, 0.616);
 }
 
 
 
 .web-edit-logo {
     filter: invert(100);
-    height: 40px;
+    height: 4rem;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .spon-logo {
-    height: 40px;
+    height: 4rem;
     cursor: pointer;
 }
 
@@ -327,9 +331,9 @@ a[href="https://github.com/Diptenusarkar"] {
 
 .toolbar-item button {
     color: white !important;
-    padding: 10px !important;
-    margin: 20px 30px 0 0 !important;
-    font-size: 20px !important;
+    padding: 1rem !important;
+    margin: 2rem 3rem 0 0 !important;
+    font-size: 2rem !important;
     cursor: pointer !important;
 }
 
